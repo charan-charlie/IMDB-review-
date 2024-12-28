@@ -13,7 +13,7 @@ reverse_word = {value : key for key ,value in word_index.items()}
 
 # Load the pre-traied model with ReLU activation
 
-model = load_model("simple_rnn_imdb.h5")
+model = load_model("Simple_rnn_imdb.h5")
 
 def decode_review(encoded_view):
     return ' '.join([reverse_word.get(i-3," ? ") for i in encoded_view])
